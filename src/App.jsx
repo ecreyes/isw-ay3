@@ -14,7 +14,7 @@ import MedicosPage from "./pages/MedicosPage";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename='/'>
       <Switch>
         <Route exact path="/home" component={HomePage} />
         <Route exact path="/example" component={ExamplePage} />
