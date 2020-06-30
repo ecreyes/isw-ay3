@@ -1,7 +1,7 @@
 import React from 'react';
 
 //router
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
@@ -14,7 +14,7 @@ import MedicosPage from "./pages/MedicosPage";
 
 const App = () => {
   return (
-    <Router basename={process.env.REACT_APP_BASENAME || ""}>
+    <Router>
       <Switch>
         <Route exact path="/home" component={HomePage} />
         <Route exact path="/example" component={ExamplePage} />
