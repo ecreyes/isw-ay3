@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "https://isw-springboot-example-ecreyes.herokuapp.com/api"
+const API_URL = "https://spring-post-new-isw.herokuapp.com/api"
 
 const getMedicos = () => {
   let url = `${API_URL}/medicos`;
